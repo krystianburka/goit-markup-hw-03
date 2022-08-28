@@ -103,8 +103,9 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
-.footre > .content {
+.footer > .content {
   flex-grow: 1;
 }
 .address {
@@ -116,8 +117,6 @@
 .number {
   display: flex;
   flex-direction: column;
-
-  justify-content: flex-start;
 }
 .menu {
   width: 1400px;
