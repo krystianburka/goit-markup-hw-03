@@ -37,6 +37,9 @@
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0;
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .link {
@@ -48,7 +51,7 @@
   line-height: 171%;
   letter-spacing: 0.02em;
   padding-right: 0px;
-  padding-left: 30px;
+  padding-left: 0px;
 }
 .link:hover {
   color: #2196f3;
@@ -56,8 +59,25 @@
   background-color: #ffffff;
 }
 
+.link1 {
+  color: #757575;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.02em;
+  padding-right: 0px;
+  padding-left: 40px;
+}
+.link1:hover {
+  color: #2196f3;
+
+  background-color: #ffffff;
+}
 .contact {
   /* background-color: #2196f3; */
+
 }
 
 .buttons {
