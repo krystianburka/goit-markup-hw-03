@@ -23,7 +23,8 @@
   letter-spacing: 0.06em;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 .header {
@@ -46,7 +47,8 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.02em;
-  padding-right: 50px;
+  padding-right: 0px;
+  padding-left: 30px;
 }
 .link:hover {
   color: #2196f3;
@@ -55,6 +57,7 @@
 }
 
 .contact {
+  /* background-color: #2196f3; */
 }
 
 .buttons {
@@ -167,13 +170,9 @@
   flex-direction: column;
   padding-top: 20px;
 }
-.container-lorem {
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
+  
+
 .border {
   display: flex;
 
@@ -224,32 +223,46 @@
   justify-content: center;
 }
 .container-graph {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.box {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.box-lorem {
-  max-width: 25%;
-  margin: 10px;
+  max-width: 1200px;
+  box-sizing: content-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-right: 20px;
+  gap: 0;
+
+  margin: 0px;
+  padding-top: 50px;
+
 }
-.box-graph {
+
+.box {
+  padding-bottom: 30px;
+  padding-top: 15px;
+  margin: 0px;
+}
+.container-lorem {
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  padding: 0px;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  padding-top: 50px;
+}
+.box-lorem {
+  max-width: 24%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 0px;
   margin: 0px;
+ 
+}
+.box-graph {
+  display: block;
+  padding-right: 30px;
 
-  list-style: none;
-  justify-content: center;
+  background-color: aqua;
 }
 
 .box-team {
@@ -260,15 +273,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: #757575;
+  color: #000000;
   background-color: #ffffff;
   box-shadow: var(--box);
   max-width: 270px;
 }
 .paragraf {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #212121;
-  text-align: left;
-  width: 270px;
 }
 
 .paragraf1 {
@@ -284,20 +302,25 @@
   text-decoration: solid;
   text-align: center;
   display: inline-block;
+ 
+  margin: 0;
+  padding-top: 94px;
 }
 
 .lorem {
-  width: 350px;
   /* margin: 10 15px 15px; */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  margin: 0px;
+  padding: 0px;
+  
   color: #757575;
   text-align: justify;
-  letter-spacing: 0.03em;
-  display: inline-block;
-  width: 100%;
 }
 .section {
   color: #ffffff;
@@ -307,9 +330,11 @@
   background-color: #f5f4fa;
 }
 .section2 {
-  padding-top: 94px;
-  padding-bottom: 94px;
+ margin: 0;
+ padding: 0;
+ gap:0;
   background-color: #f5f4fa;
+  padding-top: 0;
 }
 
 .links {
@@ -333,22 +358,39 @@
   padding-top: 94px;
 }
 
-.section-portfolio {
+/* .section-portfolio {
+  background-color: #757575;
+
+  max-width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
-}
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+} */
 
 .container-portfolio {
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  padding: 0px;
-  list-style: none;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0;
+
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .box-portfolio {
-  flex-basis: calc((100% - 60px) / 3);
+  padding-bottom: 30px;
+  padding-top: 15px;
+  margin: 0px;
+
+  /* flex-basis: calc((100% - 60px) / 3); */
+}
+.figure-portfolio {
+  margin: 0;
+  padding: 0%;
 }
 
 .description-portfolio {
@@ -356,7 +398,40 @@
   flex-direction: column;
   align-items: flex-start;
   color: #757575;
-  background-color: #ffffff;
+
+  box-shadow: var(--box);
+  max-width: 370px;
+}
+.container-portfolio2 {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0;
+  padding: 0;
+
+  margin: 0;
+  padding-top: 94px;
+  
+}
+.box-portfolio2 {
+  padding-bottom: 94px;
+  padding-top: 15px;
+  margin: 0px;
+
+  /* flex-basis: calc((100% - 60px) / 3); */
+}
+.figure-portfolio2 {
+  margin: 0;
+  padding: 0%;
+}
+
+.description-portfolio2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black
+
   box-shadow: var(--box);
   max-width: 370px;
 }
