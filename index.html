@@ -13,48 +13,50 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Studio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>WebStudio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
 
   <body>
-    <header class="border">
+    <header class="header">
       <div class="menu">
-        <a class="link" href="index.html">
-          <img
-            src="images/webstudiologo.png"
-            alt="companylogo"
-            width="145"
-            height="31"
-          />
-        </a>
+        <a class="link-logo" href="index.html"
+          ><span style="color: black">Web</span
+          ><span style="color: #2196f3">Studio</span></a
+        >
+
         <nav>
-          <a class="link1" href="#agencja">Agnecja</a>
+          <a class="link-nav" href="#agencja">Agnecja</a>
 
-          <a class="link1" href="portfolio.html">Portfolio</a>
+          <a class="link-nav" href="portfolio.html">Portfolio</a>
 
-          <a class="link1" href="#kontakt">Kontakt</a>
+          <a class="link-nav" href="#kontakt">Kontakt</a>
         </nav>
         <div class="contact">
-          <a class="link1" href="mailto:info@devstudio.com"
+          <a class="link-nav" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
-          <a class="link1" href="tel:+48111111111">+48 111 111 111</a>
+          <a class="link-nav" href="tel:+48111111111">+48 111 111 111</a>
         </div>
       </div>
     </header>
     <main class="main">
       <div class="header">
-        <h1 class="paragraf2">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <h1 class="paragraf-main">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 
         <div>
-          <button class="button">Zamów usługę</button>
+          <button class="button-studio">Zamów usługę</button>
         </div>
       </div>
     </main>
     <section class="section-lorem">
       <div class="container">
-        <div class="container-lorem">
+        <div class="wrapper">
           <div class="box-lorem">
             <h4 class="paragraf">LOREM IPSUM</h4>
             <p class="lorem">
@@ -88,11 +90,11 @@
     </section>
     <section class="section-whatwedo">
       <div class="container">
-        <div class="container-graph">
-          <h2 class="paragraf1">Czym się zajmujemy</h2>
+        <ul class="wrapper">
+          <h2 class="paragraf-section">Czym się zajmujemy</h2>
 
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio2">
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/block_diagram.jpg"
@@ -101,9 +103,9 @@
                 height="294"
               />
             </figure>
-          </div>
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio2">
+          </li>
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/mobileappdeveloper.jpg"
@@ -112,9 +114,9 @@
                 height="294"
               />
             </figure>
-          </div>
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio2">
+          </li>
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/graphic_design.jpg"
@@ -123,17 +125,17 @@
                 height="294"
               />
             </figure>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="section-team">
       <div class="container">
-        <div class="container-portfolio">
-          <h2 class="paragraf1">Nasz zespół</h2>
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio2">
+        <ul class="wrapper">
+          <h2 class="paragraf-section">Nasz zespół</h2>
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/produckt_designer.jpg"
@@ -146,9 +148,9 @@
                 Produckt Designer
               </figcaption>
             </figure>
-          </div>
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio">
+          </li>
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/frontenddeveloper.jpg"
@@ -161,10 +163,10 @@
                 Frontend Developer
               </figcaption>
             </figure>
-          </div>
+          </li>
 
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio">
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/marketing.jpg"
@@ -177,9 +179,9 @@
                 Marketing
               </figcaption>
             </figure>
-          </div>
-          <div class="box-portfolio2">
-            <figure class="figure-portfolio2">
+          </li>
+          <li class="box">
+            <figure class="figure">
               <!-- Dowolna treść graficzna: zdjęcie, wykres, diagram itp. -->
               <img
                 src="images/ui_designer.jpg"
@@ -192,8 +194,8 @@
                 UI Designer
               </figcaption>
             </figure>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -211,11 +213,11 @@
         <address class="number">
           <i>m. Warszawa, Aleje Jerozolimskie 21</i>
 
-          <a class="links" href="mailto:info@devstudio.com"
+          <a class="link-footer" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
 
-          <a class="links" href="tel:+48111111111">+48 111 111 111</a>
+          <a class="link-footer" href="tel:+48111111111">+48 111 111 111</a>
         </address>
       </div>
     </footer>
