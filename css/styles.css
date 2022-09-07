@@ -25,11 +25,9 @@
 
 .header {
   display: flex;
-
+  flex-wrap: wrap;
   align-items: center;
   color: #ffffff;
-  display: flex;
-  align-items: center;
   justify-content: center;
   padding-left: 25px;
   padding-top: 32px;
@@ -37,7 +35,17 @@
   padding-right: 25px;
   /* border: 1px solid red; */
 }
-
+.section-order {
+  background-color: #2f303a;
+  width: 1200px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .link {
   color: #757575;
   text-decoration: none;
