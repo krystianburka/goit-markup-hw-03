@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-go it full stack course 02
+# goit-markup-hw-03
+go it full stack course 03
